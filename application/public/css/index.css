@@ -1,0 +1,77 @@
+.body{
+    display: flex;
+}
+.left{
+    display: flex;
+    width: 250px;
+    height: 850px;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 2px solid #333;
+}
+.right{
+    display: flex;
+    background-color: greenyellow;
+}
+.kvadrat1{
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    background-color: yellow;
+    border: 1px solid #333;
+}
+.kvadrat1newtask{
+    display: flex;
+    margin: 10px 20px 0px;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: white;
+}
+.kvadrat1task{
+    display: flex;
+    margin: 5px 60px 5px 35px;
+    padding: 8px;
+    background-color: darkcyan;
+    border: 1px solid #333;
+}
+.kvadrat1idea{
+    display: flex;
+    margin: 5px 60px 5px 35px;
+    padding: 8px;
+    background-color: red;
+    border: 1px solid #333;
+}
+.kvadrat1setting{
+    display: flex;
+    margin: 5px 60px 5px 35px;
+    padding: 8px;
+    background-color: green;
+    border: 1px solid #333;
+}
+.kvadrat2{
+    display: flex;
+    height: 50px;
+    background-color: greenyellow;
+    border: 1px solid #333;
+}
+.kvadrat2text{
+    display: flex;
+    margin: 5px 40px 5px 23px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    background-color: white;
+}
+.kvadrat2textxxx{
+    display: flex;
+    margin: 0px 30px 0px 40px;
+    background-color: white;
+}
+.kvadrat3{
+    display: flex;
+    height: 400px;
+    background-color: skyblue;
+    border: 1px solid #333;
+}
