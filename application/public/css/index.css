@@ -74,4 +74,5 @@
     height: 400px;
     background-color: skyblue;
     border: 1px solid #333;
+    flex-direction: column;
 }
