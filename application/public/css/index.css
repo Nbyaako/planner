@@ -24,6 +24,7 @@
     display: flex;
     margin: 10px 20px 0px;
     padding: 15px;
+    text-decoration:none;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     background-color: white;
@@ -75,4 +76,15 @@
     background-color: skyblue;
     border: 1px solid #333;
     flex-direction: column;
+    margin: 0px 0px 0px 0px;
+}
+.kvadrat3category{
+    display: flex;
+    text-decoration:none;
+    border: 3px solid skyblue;
+    margin: 5px 0px 0px 5px;
+}
+.kvadrat3categoryxxx{
+    display: flex;
+    margin: -4px 10px 0px 10px;
 }

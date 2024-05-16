@@ -11,11 +11,11 @@ class Category
 {
     
     #[ORM\Id]
-    #[ORM\GeneratedValue]
+    #[ORM\GeneratedValue(strategy: "AUTO")]
     #[ORM\Column(type: "integer")]
     
     private int $id;
-
+    public function getId(): string {return $this->id;}
     
     #[ORM\Column(type: "string", length: 255)]
     private string $name;

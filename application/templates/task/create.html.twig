@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CreateCategory{% endblock %}
+
+{% block body %}
+
+{{ form_start(form) }}
+    {{ form_widget(form.name) }}
+    {{ form_widget(form.message) }}
+    {{ form_widget(form.submit) }}
+{{ form_end(form) }}
+{% endblock %}

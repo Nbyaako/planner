@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Form\CreateCategoryType;
+use App\Entity\Category;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -32,6 +33,26 @@ class CreateCategoryController extends AbstractController
 
         return $this->render('create_category/index.html.twig', [
             'form' => $form->createView(),
+        ]);
+    }
+    #[Route("/category/{id}/delete", name: "delete")]
+    public function delete(EntityManagerInterface $entityManager, $id): Response
+    {
+        $category = $entityManager->getRepository(Category::class)->find($id);
+        if($category !== null) {
+            $entityManager->remove($category);
+            $entityManager->flush();
+        }
+        
+        return $this->redirectToRoute('app_index');
+    }
+    #[Route("/category/{id}/view", name: "view")]
+    public function view(EntityManagerInterface $entityManager, $id): Response
+    {
+        $entityManager->getRepository(Category::class)->find($id);
+
+        return $this->render('create_category/view.html.twig', [
+            'id' => $id
         ]);
     }
 }
