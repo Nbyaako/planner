@@ -14,11 +14,11 @@ class IndexController extends AbstractController
     public function index(CategoryRepository $categoryRepository, TaskRepository $taskRepository): Response
     {
         $categorys = $categoryRepository->findAll();
-        $task = $taskRepository->findAll();
+        $tasks = $taskRepository->findAll();
 
         return $this->render('index/index.html.twig', [
             'categorys' => $categorys,
-            'task' => $task,
+            'tasks' => $tasks,
         ]);
     }
 }

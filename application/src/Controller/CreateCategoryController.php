@@ -12,8 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CreateCategoryController extends AbstractController
 {
-
-    #[Route("/createcategory", name: "app_createcategory")]
+    #[Route("/createcategory", name: "createcategory")]
     public function createcategory(EntityManagerInterface $entityManager, Request $request): Response
     {
         $form = $this->createForm(CreateCategoryType::class);
@@ -30,7 +29,6 @@ class CreateCategoryController extends AbstractController
 
 
         }
-
         return $this->render('create_category/index.html.twig', [
             'form' => $form->createView(),
         ]);

@@ -44,7 +44,7 @@ class TaskController extends AbstractController
         
         return $this->redirectToRoute('app_index');
     }
-    #[Route("/Task/{id}/view", name: "view")]
+    #[Route("/task/{id}/view", name: "view")]
     public function view(EntityManagerInterface $entityManager, $id): Response
     {
         $entityManager->getRepository(Task::class)->find($id);
