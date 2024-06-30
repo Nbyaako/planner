@@ -8,7 +8,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Routing\Annotation\Route;
 
 class TaskController extends AbstractController
 {
@@ -33,7 +33,7 @@ class TaskController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
-    #[Route("/task/{id}/delete", name: "delete")]
+    #[Route("/task/{id}/delete", name: "tdelete")]
     public function delete(EntityManagerInterface $entityManager, $id): Response
     {
         $task = $entityManager->getRepository(Task::class)->find($id);
@@ -44,7 +44,7 @@ class TaskController extends AbstractController
         
         return $this->redirectToRoute('app_index');
     }
-    #[Route("/task/{id}/view", name: "view")]
+    #[Route("/task/{id}/view", name: "tview")]
     public function view(EntityManagerInterface $entityManager, $id): Response
     {
         $entityManager->getRepository(Task::class)->find($id);

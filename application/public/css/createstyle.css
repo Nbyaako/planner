@@ -1,0 +1,14 @@
+.createstyle{
+    display: flex;
+    border: 1px solid #333;
+    margin: 260px 700px 0px 700px;
+    padding: 100px;
+    justify-content: center;
+    background-color: yellow;
+    flex-direction: row;
+    text-decoration: none
+}
+.fafa{
+    display: flex;
+    text-decoration: none
+}

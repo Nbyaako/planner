@@ -20,9 +20,10 @@ class CreateCategoryType extends AbstractType
             ])
             ->add('message', TextareaType::class, [
                 'label' => 'Your message',
+                'attr' => array('style' => 'width: 200px; height: 100px'),
             ])
             ->add('submit', SubmitType::class, [
-                'label' => 'Send',
+                'label' => 'Send'
             ]);
     }
     public function configureOptions(OptionsResolver $resolver): void

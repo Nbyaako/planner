@@ -3,10 +3,14 @@
 {% block title %}CreateCategory{% endblock %}
 
 {% block body %}
-
-{{ form_start(form) }}
-    {{ form_widget(form.name) }}
-    {{ form_widget(form.message) }}
-    {{ form_widget(form.submit) }}
-{{ form_end(form) }}
+    <div>
+        <div class="createstyle">
+            {{ form_start(form) }}
+                {{ form_widget(form.name) }}
+                {{ form_widget(form.message) }}
+            <button type="submit"><a href="/index" class="fafa">back</a></button>
+                {{ form_widget(form.submit) }}
+            {{ form_end(form) }}
+        </div>
+    </div>
 {% endblock %}

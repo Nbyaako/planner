@@ -11,7 +11,17 @@
 }
 .right{
     display: flex;
-    background-color: greenyellow;
+    width: 250px;
+    height: 850px;
+    background-color: lightgray;
+}
+.righttask{
+    display: flex;
+    margin: 15px 0px 0px 15px;
+}
+.rigttaskminus{
+    display: flex;
+    flex-direction: row;
 }
 .kvadrat1{
     display: flex;
@@ -33,7 +43,7 @@
     display: flex;
     margin: 5px 60px 5px 35px;
     padding: 8px;
-    background-color: darkcyan;
+    background-color: forestgreen;
     border: 1px solid #333;
 }
 .kvadrat1idea{

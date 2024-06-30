@@ -12,12 +12,6 @@
             <div class="kvadrat1task">
                 Tasks
             </div>
-            <div class="kvadrat1idea">
-                Ideas
-            </div>
-            <div class="kvadrat1setting">
-                Settings
-            </div>
         </div>
         <div class="kvadrat2">
             <div class="kvadrat2text">
@@ -29,7 +23,7 @@
         </div>
         <div class="kvadrat3">
             {% for category in categorys %}
-            <div class="kvadrat3category">    
+            <div class="kvadrat3category">
                 <a href="category/{{ category.id }}/view">{{ category.name }}</a>
                 <div class="kvadrat3categoryxxx">
                     <a href="/category/{{ category.id }}/delete"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M200-440v-80h560v80H200Z"/></svg></a>
@@ -40,9 +34,9 @@
     </div>
     <div class="right">
         {% for task in tasks %}
-        <div>    
+        <div class="righttask">
             <a href="task/{{ task.id }}/view">{{ task.name }}</a>
-            <div>
+            <div class="rigttaskminus">
                 <a href="/task/{{ task.id }}/delete"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M200-440v-80h560v80H200Z"/></svg></a>
             </div>
         <div>
